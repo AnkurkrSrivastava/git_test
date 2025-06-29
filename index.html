@@ -20,40 +20,169 @@
         <li>maggie</li>
         <li>pepsi</li>
         <li>coffee</li>
-    </ul>      
-    <table>
-        <tr>
-            <td>Sr.No.</td>
-            <td>Class</td>
-            <td>Grade</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>12</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>12</td>
-            <td>B</td>
-        </tr>
-    </table>
+    </ul>
+
+
     <h2><a href="https://www.google.com">Google</a></h2>
     <img src="hoala adsd" alt="Something">
     <p>H<sub>2</sub>+ O<sub>2</sub> =H<sub>2</sub>O</p>
     <P style="background-color: blueviolet;">My name is Ankur<br/>Paragraph is a block element</P>
+    
+    
     <pre>
     Hola Amigo...
     kaise ho theek ho
     </pre>
+    
     <div style="background-color: brown;">
         <p>Division tag is a block element</p>
         <img src="blah" alt="Sorry">
         <br>
         <a href="https://github.com">Github</a>
     </div>
+    
     <span style="background-color: green;">span tag is an inline element</span>
     <span style="background-color: blueviolet;">one more example of span tag</span>
+    
+    <br>
+    <br>
+    <!--tables-->
+
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>potition</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tfoot>
+            <td colspan="3">Total Expense:</td>
+            <td>$4600</td>
+        </tfoot>
+        <tr>
+            <td>1</td>
+            <td>Bill G</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+            <td rowspan="4">Company Founder</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve G</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry G</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark G</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+        </tr>    
+    </table>
+    
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td rowspan="3" style="background-color: yellow;">Day</td>
+                <td colspan="3" style="background-color: violet;">Seminar</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: aquamarine;">Schedule</td>
+                <td rowspan="2" style="background-color: aqua;">Topic</td>
+            </tr>
+            <tr>
+                <td style="background-color: greenyellow;">begin</td>
+                <td style="background-color: red;">End</td>
+            </tr>
+        </thead>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 AM</td>
+            <td rowspan="2">5:00 PM</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 AM</td>
+            <td>11:00 AM</td>
+            <td rowspan="3"> Xpath <br> XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>2:00 PM</td>
+        </tr>
+        <tr>
+            <td>2:00 PM</td>
+            <td>5:00 PM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 AM</td>
+            <td>12:00 PM</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    <br>
+
+    <!--Forms-->
+
+    <fieldset>
+        <legend>HTML form</legend>
+        <form>
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="Email">
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="password">
+       
+        <br>
+        <label for="datepicker">Choose Date</label>
+        <input type="date" id="datepicker">
+        <br>
+        <select name="Food Items" id="selector1">
+            <option value="maggie">maggie</option>
+            <option value="Oreo">Oreo</option>
+            <option value="chips">chips</option>
+        </select>
+        <br>
+        <textarea name="textarea" id="textarea" cols="15" rows="2" placeholder="enter text here..."></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+
+    <!--Form2-->
+
+    <form>
+        <p>Select preffered language</p>
+        <label for="ChklangE">English:</label>
+        <input type="checkbox" id="ChklangE">
+        <label for="ChklangH">Hindi:</label>
+        <input type="checkbox" id="ChklangH">
+        <br>
+        <br>
+        <label for="RadM">Male:</label>
+        <input type="radio" id="RadM" name="Gender">
+        <label for="RadF">Female:</label>
+        <input type="radio" id="RadF" name="Gender">
+        <label for="RadN">Prefer not to say:</label>
+        <input type="radio" id="RadN" name="Gender">
+        <br>
+        <label for="upload">Upload Resume:</label>
+        <input type="file" id="upload">
+    </form>
 
 </body>
 </html>
