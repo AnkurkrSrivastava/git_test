@@ -1,0 +1,12 @@
+@font-face{
+    font-family:'ClashRegular';src:url('Clash_Regular.otf')format('opentype'); 
+}
+
+h2{
+    color: blueviolet;
+    font-family: 'ClashRegular',sans-serif;
+}
+#lorem1{
+    text-align: center;
+    color: brown;
+}
